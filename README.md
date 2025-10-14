@@ -115,3 +115,55 @@ Open problems & challenges:
 
 
 Ref: https://lnkd.in/gCMWmsQG, https://lnkd.in/gNCprPCK, https://lnkd.in/gxpgPBzr
+
+
+------
+
+Note #5 on Bold Recent Research Areas in GenAI/LLM.
+
+
+
+The next most important current frontiers in AI agent and LLM research is:
+
+💡 Research Area (5): Long-context, multimodal, and world models
+Modern AI research is increasingly focused on expanding the scope and depth of what large language models can understand, remember, and interact with. This direction combines three powerful dimensions:
+
+❇️  Long-context modeling: enable models to handle much longer input sequences (from a few thousand tokens to millions) so they can maintain memory of entire documents, conversations, or histories.
+❇️ Multimodal integration: make models understand and generate across text, image, audio, video, and 3D modalities simultaneously.
+❇️ World models: build models that internalize the dynamics of the real or simulated world, allowing prediction, planning, and action; beyond pure text generation.
+
+
+
+
+Some relevant works:
+
+1. Long-context modeling: #anthropic ’s #claude 3.5 (200K–1M token context)
+#openaI ’s GPT-4-turbo (128K context), #google #deepmind ’s Gemini 1.5 (1M+ context window)
+2. Multimodal integration: GPT-4o (OpenAI, 2024), Gemini 1.5 Pro (Google DeepMind, 2024), Kosmos-2 (#microsoft #research)
+3. World models: Google DeepMind’s World Model (DreamerV3, Gato), #meta ’s JEPA (Joint Embedding Predictive Architecture), OpenAI’s Video World Models
+
+
+🔆 The main goal is to enable AI agents that can perceive, remember, and reason across long time horizons and multiple sensory modalities, grounded in an internal model of how the world works — ultimately allowing them to plan, act, and adapt like humans.
+
+
+Why these are critical for practical deployment:
+✅ Longer context lets agents reason across entire projects, codebases, or days of dialogue — critical for persistent, autonomous reasoning.
+✅ Multimodal LLMs are closer to human perception — they can `see' and `hear' the world, not just read about it.
+✅ Agents that understand causality and environment dynamics can plan and act autonomously, bridging perception and reasoning.
+
+
+
+Challenges:
+1. Memory & scalability 
+2. Multimodal fusion: aligning and reasoning across diverse data types 
+3. Grounded understanding: connecting abstract knowledge to real-world physical dynamics and causal relationships.
+4. Temporal consistency:  over long time horizons or across evolving contexts.
+5. Data & simulation limitations 
+6. Evaluation & alignment 
+
+
+
+
+Ref: Ha & Schmidhuber (2018). World Models. arXiv:1803.10122, Hafner et al. (2023). DreamerV3: Mastering Diverse Domains through World Models, LeCun (2023). A Path Towards Autonomous Machine Intelligence. (JEPA framework).
+
+
