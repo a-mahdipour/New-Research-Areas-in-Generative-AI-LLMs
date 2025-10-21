@@ -119,13 +119,7 @@ Ref: https://lnkd.in/gCMWmsQG, https://lnkd.in/gNCprPCK, https://lnkd.in/gxpgPBz
 
 ------
 
-Note #5 on Bold Recent Research Areas in GenAI/LLM.
-
-
-
-The next most important current frontiers in AI agent and LLM research is:
-
-💡 Research Area (5): Long-context, multimodal, and world models
+## Research Area (5): Long-context, multimodal, and world models
 Modern AI research is increasingly focused on expanding the scope and depth of what large language models can understand, remember, and interact with. This direction combines three powerful dimensions:
 
 ❇️  Long-context modeling: enable models to handle much longer input sequences (from a few thousand tokens to millions) so they can maintain memory of entire documents, conversations, or histories.
