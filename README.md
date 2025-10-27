@@ -155,9 +155,49 @@ Challenges:
 5. Data & simulation limitations 
 6. Evaluation & alignment 
 
+-----
+
+## Research Area (6): Hallucination detection & factuality verification
+
+
+🔆 The main goal is to detect when a model’s output is unfounded, incorrect, or invented, and either correct it or abstain — so LLMs can be trusted for high-stakes, auditable decision making.
+
+
+🌟 Hallucinations aren’t just “made-up facts” — they span reasoning errors, citation mismatches, and contextual drift. Effective mitigation requires multi-layer grounding (retrieval + citation + uncertainty) and domain-specific validation (especially in healthcare, regulatory, and scientific settings).
 
 
 
-Ref: Ha & Schmidhuber (2018). World Models. arXiv:1803.10122, Hafner et al. (2023). DreamerV3: Mastering Diverse Domains through World Models, LeCun (2023). A Path Towards Autonomous Machine Intelligence. (JEPA framework).
+### Some relevant works (what people building):
+
+1. Retrieval grounding / RAG — force the model to cite or condition on vetted sources so outputs can be checked against provenance.
+2. External verification pipelines — after generation, run an automated fact-checker (retriever + verifier) that compares claims to trusted corpora (e.g., knowledge bases, documents).
+3. Contrastive/conservative decoding — decoding strategies that prefer safer, more evidence-backed continuations (penalize low-support tokens).
+4. Uncertainty/confidence calibration.
+5. Self-consistency and debate: generate multiple answers or internal critiques and prefer the consensus or the more evidence-backed reply.
+6. Citation and provenance pipelines — require the model to emit citations and structured provenance alongside answers (so humans or systems can verify).
+7. Human-in-the-loop verification (RLHF/RL with human feedback).
+8. Benchmarks & datasets: domain-specific factuality datasets (FEVER, TruthfulQA style, plus domain benchmarks) to evaluate factuality systematically.
+
+
+### Benefits and why matters?
+✅ Safety & patient protection — reduces risk of outputs.
+✅ Regulatory readiness.
+✅ Adoption & trust.
+✅ Cost avoidance.
+✅ Operational efficiency (less human labor + high quality).
+✅ Competitive advantage (higher-value applications).
+
+
+### Research Challenges 
+1. Defining “factuality”: hard in opaque domains with incolpmete ground truth
+2. Retrieval errors = cascading errors: bad docs → “evidence” for hallucinations.
+3. Latency & cost (e.g. multi-step verify→generate loops)
+4. Calibration brittleness: confidence estimates aren’t always well-aligned with true correctness.
+5. Evaluation gaps: automatic metrics often correlate poorly vs. human.
+6. Regulatory traceability.
+7. Human workflow integration: balancing throughput vs safety by experts.
+
+
+
 
 
