@@ -5,7 +5,7 @@ We describe novel and common research areas in Gen AI and LLMs for 2025 and near
 
 There are many high-impact research areas in LLM work — areas pushing boundaries, with big open questions, rapid progress, or potential paradigm shifts. In a series of notes, I will go through some of the most important research areas with huge impacts in Medicine, Marketing, Finance and so on. My effort is to highlight some important research areas that are more common introducing their main features/failure parts.
 
-💡 Research Area (1): Reasoning beyond limits / multi-step & self-reflective reasoning.
+## Research Area (1): Reasoning beyond limits / multi-step & self-reflective reasoning.
 
 LLMs are increasingly trying to not just spit out answers but reason through problems: multi-step chains, planning, inference-time scaling, distillation, Reinforcement Learning (RL) from human feedback, etc. There is work on how to get reasoning without explicit supervision (chain-of-thought supervision), or how to refine and correct mistakes through self-reflection. A recent paper “Reasoning Beyond Limits: Advances and Open Problems for LLMs” surveys many such methods and discusses the challenges. 
 
@@ -19,6 +19,7 @@ While progress is strong, there exist several limitations and open questions:
 
 Ref: https://lnkd.in/g4RgQB7X, https://lnkd.in/gtFrdfUp, https://lnkd.in/gk2T4sGZ
 --------
+
 ## Research Area (2): Minimalist rule-based reinforcement learning for domain-specific reasoning (e.g. medical LLMs)
 
 By “minimalist rule-based RL,” we mean approaches that:
