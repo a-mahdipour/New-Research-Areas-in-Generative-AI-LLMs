@@ -181,7 +181,7 @@ Challenges:
 
 
 ### Benefits and why matters?
-✅ Safety & patient protection — reduces risk of outputs.
+✅ Safety & customer protection — reduces risk of outputs.
 ✅ Regulatory readiness.
 ✅ Adoption & trust.
 ✅ Cost avoidance.
