@@ -289,3 +289,48 @@ Ref: arxiv.org/abs/1503.02531, arxiv.org/abs/1506.02626, arxiv.org/abs/1712.0587
 
 
 Ref: arXiv preprint 2107.00793, Xiao et al. Computational Linguistics (2025), Feder et al. Computational Linguistics (2021)
+
+------
+
+## Frontier Research Area (11): Interpretability & explainability for large models
+
+🌟 Effort to know why GenAI/LLMs make certain predictions or generate specific outputs. As models scale, their internal reasoning becomes vague, creating trust, safety, and compliance issues. Interpretable AI aims to open this black box, aligning model behavior with human understanding and regulatory requirements.
+
+
+
+### Main Goals:
+
+🔆 Trace decisions: identify which inputs or internal features most influenced an output.
+🔆 Expose reasoning pathways: understand how models arrive at conclusions.
+🔆 Detect biases & failure modes: uncover spurious correlations, social biases, or hidden vulnerabilities.
+🔆 Enable human oversight: allow domain experts to audit and validate AI decisions.
+🔆 Comply with regulations: Meet legal standards for “right to explanation”. 
+
+
+### Some relevant works (what people building):
+1. Feature attribution: tools like Integrated Gradients, SHAP and LIME measure.
+2. Attention and activation analysis: examining attention weights or activation patterns in transformer layers to interpret reasoning or token importance.
+3. Concept-based explanations: latent neurons to human-understandable concepts.
+4. Influence functions: how much each training example influenced a model’s output.
+5. Surrogate & proxy models: train simpler interpretable models to approximate black-box model behavior locally.
+6. Visualization tools: like BERTViz, Captum, InterpretML, OpenAI LogProbs, and Ecco for visual exploration of attention heads, embeddings, or activations.
+
+
+### Benefits and why matters?
+
+✅ Non-explainable models may fail compliance audits.
+✅ Risk mitigation: early detection of biases, artificial reasoning, or data leakage.
+✅ Trust & adoption: trust and cross-functional adoption in sensitive workflows
+✅  Innovation enablement: transparency accelerates scientific discovery.
+✅  Demonstrates responsible AI governance and brand leadership in transparency.
+
+
+### Research Challenges 
+
+1. Faithfulness: many interpretability methods give plausible but inaccurate explanations (post-hoc rationalizations).
+2. Scalability: modern LLMs (70B+ parameters) are too large for naive interpretability pipelines.
+3. Human Understanding: abstract latent space structures -> intuitive human concepts.
+4. Evaluation Metrics: what is “good” — clarity, correctness, usefulness, or faithfulness?
+5. Trade-offs: Interpretable models may be less accurate or flexible.
+
+Ref: arxiv.org/abs/1702.08608, arxiv.org/abs/1606.03490, transformer-circuits.pub 
