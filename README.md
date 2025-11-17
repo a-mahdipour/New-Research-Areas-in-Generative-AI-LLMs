@@ -334,3 +334,50 @@ Ref: arXiv preprint 2107.00793, Xiao et al. Computational Linguistics (2025), Fe
 5. Trade-offs: Interpretable models may be less accurate or flexible.
 
 Ref: arxiv.org/abs/1702.08608, arxiv.org/abs/1606.03490, transformer-circuits.pub 
+
+-----
+
+## Frontier Research Area (12): Agentic tool use & human-ai collaboration interfaces
+
+
+🌟 Such studies invoke external tools (search, calculators, calendars, APIs, robotic controllers) and coordinate with people for oversight, clarification, and decision-making. So agents don’t only answer but act, orchestrate substeps, and involve humans at the right moments.
+
+
+
+### Main Goals:
+🔆 Robust tool invocation: reliable external tool/APIs to call (format calls safely). 
+🔆 Planner–executor architectures: synthesize multi-step plans, execute tools, and recover from errors. 
+🔆 Human–AI workflows: design interfaces & protocols for human oversight, clarification, approval, and shared control.
+🔆 Self-improvement & learning: let agents learn when tool-calls help (self-supervision / RL / contrastive methods).
+🔆 Safety, verification & auditing: logable, verifiable tool usage and fail-safe behaviour for high-stakes domains.
+
+
+### Some relevant works (what people building):
+1. LangChain (agents / LangGraph): tool frameworks, agent runtimes and run loops (planner → tool → observe → re-plan). Usually used in industry prototypes. 
+2. Microsoft AutoGen / Agent framework: multi-agent orchestration and human-in-the-loop templates for building collaborative agents. 
+3. ReAct: reasoning traces / tool-actions so models can both think aloud and call APIs during reasoning. 
+4. Toolformer / self-supervised tool learning: teaches LMs which API calls are helpful via self-supervision (zero-shot). 
+
+
+### Benefits and why matters?
+
+✅ Real-world capability: agents can complete end-to-end tasks.
+✅ Human & AI synergy: humans focus on judgment and exceptions; agents handle routine orchestration and data plumbing.
+✅ Scalability & automation: automates repetitive cross-system workflows + human oversight.
+✅ Improved accuracy: calling specialized tools and reducing hallucination and factual errors.
+
+
+### Technical  Challenges 
+
+1. Reliability of tool choice & composition: models may call wrong tools, fail to chain outputs, or misuse arguments (formatting/privilege errors). 
+2. Error handling & recovery: due to latency, partial failures, inconsistent APIs.
+3. Evaluation & benchmarks: measuring task success across multi-step, cross-system workflows is nontrivial.
+4. Human–AI interface design: present rationale and uncertainty, and efficient approvals without cognitive overload.
+5. Security, privacy, and permissions.
+6. Alignment & safety: following constraints, reject malicious instructions, and defer to humans where required.
+
+
+
+Ref: docs.langchain.com, www.microsoft.com, arXiv:2210.03629
+
+
