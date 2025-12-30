@@ -421,5 +421,32 @@ Ref: docs.langchain.com, www.microsoft.com, arXiv:2210.03629
 Ref: Kirkpatrick et al. (2017),Lopez-Paz & Ranzato (2017),Parisi et al. (2019)
 
 
+------
+
+## Frontier Research Area (14): Continual learning & lifelong adaptation
+
+
+💡 To wrap up with my notes on some important advances in transformer models and LLMs as of 2025, here is a summary:
+
+🌟 Shift from pure scaling to reasoning-aware transformers with adaptive compute and explicit thinking mechanisms
+🌟 Sparse and modular (MoE) architectures enable frontier performance at lower cost
+🌟 Long-context intelligence (10⁵–10⁶ tokens) made transformers viable for real-world systems
+🌟 RAG evolved into persistent memory-augmented cognition, reducing hallucinations
+🌟 Native multimodal transformers enable cross-modal reasoning (text, image, audio, video)
+🌟 Training emphasizes data quality, self-critique, and alignment, not just volume
+🌟 LLMs are now agentic systems, not standalone models
+
+
+AGI claims vs. reality:
+*️⃣ Claim: LLMs are approaching AGI 
+✅  Reality: They show general competence, not general intelligence (no grounded world model)
+*️⃣ Claim: Scaling alone is sufficient
+✅ Reality: Gains now come from architecture, reasoning, and tooling
+*️⃣ Claim: Models “understand”
+✅ Reality: They simulate reasoning effectively, but lack true autonomy and self-motivation
+
+
+
+
 
 
